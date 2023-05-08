@@ -56,4 +56,23 @@ typedef struct instruction_s
 } instruction_t;
 
 void push(stack_t **head, unsigned int count);
+void free_stack(stack_t *head);
+void f_pall(stack_t **head, unsigned int number);
+void f_push(stack_t **head, unsigned int number);
+void addnode(stack_t **head, int n);
+void addqueue(stack_t **head, int n);
+char *_realloc(char *ptr, unsigned int old_size, unsigned int new_size);
+ssize_t getstdin(char **lineptr, int file);
+char  *clean_line(char *content);
+void f_add(stack_t **head, unsigned int counter);
+void f_nop(stack_t **head, unsigned int counter);
+void f_sub(stack_t **head, unsigned int counter);
+void f_div(stack_t **head, unsigned int counter);
+void f_mul(stack_t **head, unsigned int counter);
+void f_mod(stack_t **head, unsigned int counter);
+void f_pchar(stack_t **head, unsigned int counter);
+void f_pstr(stack_t **head, unsigned int counter);
+void f_rotl(stack_t **head, unsigned int counter);
+void f_queue(stack_t **head, unsigned int counter);
+void f_stack(stack_t **head, unsigned int counter);
 #endif
